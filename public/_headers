@@ -1,0 +1,22 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/sedl2ak-live-fast.jsdos
+  Cache-Control: public, max-age=31536000, immutable
+
+/js-dos.js
+  Cache-Control: public, max-age=31536000, immutable
+
+/js-dos.css
+  Cache-Control: public, max-age=31536000, immutable
+
+/emulators/*
+  Cache-Control: public, max-age=31536000, immutable

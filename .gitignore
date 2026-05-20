@@ -1,0 +1,24 @@
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Dependency/build folders if tooling is added later
+node_modules/
+dist/
+build/
+.wrangler/
+.pages/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+
+# Staging archives and local experiments
+*.zip
+*.7z
+*.rar
+*.bak
+*.orig

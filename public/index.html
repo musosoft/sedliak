@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Sedliak II running in the browser with js-dos.">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:title" content="Sedliak II">
+  <meta property="og:description" content="A browser-playable DOS build of Sedliak II powered by js-dos.">
+  <meta property="og:type" content="website">
+  <title>Sedliak II</title>
+  <link rel="license" href="./licenses/GPL-3.0-only.txt">
+  <link rel="preload" href="./sedl2ak-live-fast.jsdos" as="fetch" crossorigin>
+  <link rel="preload" href="./emulators/emulators.js" as="script">
+  <link rel="stylesheet" href="./js-dos.css">
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; background: #000; }
+    #dos { width: 100%; height: 100%; }
+    .notices {
+      position: fixed;
+      right: 0.5rem;
+      bottom: 0.5rem;
+      z-index: 10;
+      padding: 0.2rem 0.45rem;
+      border-radius: 0.25rem;
+      color: #bdbdbd;
+      background: rgb(0 0 0 / 70%);
+      font: 12px/1.3 system-ui, sans-serif;
+      text-decoration: none;
+    }
+    .notices:focus, .notices:hover { color: #fff; }
+  </style>
+</head>
+<body>
+  <div id="dos"></div>
+  <a class="notices" href="./THIRD_PARTY_NOTICES.md">Licenses</a>
+  <noscript>Sedliak II requires JavaScript and WebAssembly support.</noscript>
+  <script src="./js-dos.js"></script>
+  <script>
+    Dos(document.getElementById("dos"), {
+      url: "./sedl2ak-live-fast.jsdos",
+      pathPrefix: "./emulators/",
+      autoStart: true,
+      backend: "dosbox"
+    });
+  </script>
+</body>
+</html>
