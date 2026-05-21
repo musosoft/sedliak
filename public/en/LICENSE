@@ -1,0 +1,23 @@
+This repository is an aggregate distribution of separately licensed components.
+
+When these files are viewed on the deployed site, repository paths under
+`public/` are served from the site root.
+
+Sedliak II game bundle:
+- Files: public/sedl2ak-live-fast.jsdos
+- License: GNU General Public License v3.0
+- Source: https://github.com/aific/sedl2ak (HEAD observed at 19d5d338fe892b94221eeb4c03612dc2cf8c00aa)
+- Full license text: public/licenses/GPL-3.0-only.txt
+
+js-dos runtime and emulator assets:
+- Files: public/js-dos.js, public/js-dos.css, public/js-dos.js.map, public/emulators/*
+- License: GNU General Public License v2.0
+- Source package: js-dos@8.3.20 from npm (integrity sha512-VkuO9QNy5DnfsBwUuKquWmDBLJNqrk6ZK7aYTrKAMiJRuC5fofVI2n+Y7sed0PJ8mozl5OOAD2xXltZtXM57ug==)
+- Emulator source package: emulators@8.3.8 from npm (integrity sha512-bRB4brpzXorsvWQYqGClDEERSJeM9c05OLjEkMu8+HjsvGbe+gOBrKKjyqvbhWl/75djz5nXJOXKJYaJR4t7Wg==)
+- Sources: https://github.com/caiiiycuk/js-dos and https://github.com/js-dos/emulators
+- Full license text: public/licenses/GPL-2.0-only.txt
+- Bundled JavaScript dependency notices: public/licenses/BUNDLED_JS_DEPENDENCY_LICENSES.txt
+
+See THIRD_PARTY_NOTICES.md for details.
+
+All components are provided as-is, without warranty, under their respective upstream license terms.
